@@ -16,12 +16,12 @@ document.querySelector(".btn-roll").addEventListener('click', function() {
         const dice1 = Math.floor(Math.random() * 6) + 1;
         if (dice1 === 6) sixDiceRoll++;
         const diceDOM1 = document.querySelector("#dice-1");
-        diceDOM1.src = "dice-" + dice1 + ".png";
+        diceDOM1.src = "./images/dice-" + dice1 + ".png";
 
         const dice2 = Math.floor(Math.random() * 6)  + 1;
         if (dice2 === 6) sixDiceRoll++;
         const diceDOM2 = document.querySelector("#dice-2");
-        diceDOM2.src = "dice-" + dice2 + ".png";
+        diceDOM2.src = "./images/dice-" + dice2 + ".png";
         console.log(dice1 + " " + dice2);
 
         if (dice1 !== 1 && dice2 !== 1 && sixDiceRoll !== 2) {
